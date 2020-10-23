@@ -1,0 +1,112 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Finger Paint', cursive;
+  color: aliceblue;
+}
+
+
+html { 
+  background: url(Chalkboard.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+p {
+  margin: 0;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+button {
+  font-family: 'Finger Paint', cursive;
+  background-color: rgb(33, 136, 102);
+  border-radius: 5px;
+}
+
+.gameArea {
+  text-align: center;
+}
+
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    /* border: 2px solid black; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .grid-item {
+    display: grid;  
+    border: 2px solid aliceblue;
+    align-items: center;
+    justify-items: center;
+    font-size: 3.5em;
+  }
+
+  .grid-container div:nth-child(3n) {
+    border-right: none;
+}
+
+.grid-container div:nth-child(9) {
+  border-bottom: none;
+}
+
+.grid-container div:nth-child(8) {
+  border-bottom: none;
+}
+
+.grid-container div:nth-child(7) {
+  border-bottom: none;
+  border-left: none;
+}
+
+.grid-container div:nth-child(1) {
+  border-top: none;
+  border-left: none;
+}
+
+.grid-container div:nth-child(2) {
+  border-top: none;
+}
+
+.grid-container div:nth-child(3) {
+  border-top: none;
+}
+
+.grid-container div:nth-child(4) {
+  border-left: none;
+}
+
+  @keyframes flash {
+    0%   { background-color: #1c3f0d; }
+    49% { background-color: #1c3f0d; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #1c3f0d; }
+  }
+  .flash {
+  -webkit-animation: flash 0.5s 5;
+  -moz-animation:    flash 0.5s 5;
+  animation:         flash 0.5s 5;
+}
+
+/* input[type='radio']:checked:after {
+	background-color: #1c3f0d; 
+	} */

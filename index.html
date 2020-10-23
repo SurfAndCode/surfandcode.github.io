@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gameArea">
+        <h1>Tic Tac Toe</h1>
+    <!-- <input type="checkbox" name="AI" id="AI"> -->
+        <p>Who goes first?</p>
+        <form>
+            <input type="radio" name="AI" value="AI" id="AI" class="checked" checked>
+            <label for="AI">AI (X)</label>
+            <input type="radio" name="human" value="human" id="human">
+            <label for="human">You (O)</label>
+        </form>
+    <div class="grid-container">
+        <div id="0" class="grid-item"></div>
+        <div id="1" class="grid-item"></div> 
+        <div id="2" class="grid-item"></div>
+        <div id="3" class="grid-item"></div>
+        <div id="4" class="grid-item"></div>
+        <div id="5" class="grid-item"></div>
+        <div id="6" class="grid-item"></div>
+        <div id="7" class="grid-item"></div>
+        <div id="8" class="grid-item"></div>
+      </div>
+    <div>
+        <button>Start the Game</button>
+    </div>
+    </div>
+    <h2></h2>
+
+    <script src="app.js"></script>
+</body>
+</html>
